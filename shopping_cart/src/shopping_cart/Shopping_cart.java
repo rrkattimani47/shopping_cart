@@ -6,8 +6,6 @@
 package shopping_cart;
 
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -17,11 +15,13 @@ public class Shopping_cart {
     
     public static void main (String[] args){
     int ch;
+    
+            
         Cart c=new Cart();
        
        while(true)
        {
-           System.out.println("\n\nMenu\n1.Bread\n2.Milk\n3.Banana\n4.Bill\n5.Exit");
+           System.out.println("\n\nMenu\n1.Bread price=1$\n2.Milk price=0.6$\n3.Banana price=0.4$\n4.Bill\n5.Exit");
            Scanner choice=new Scanner(System.in);
             ch=choice.nextInt();
             
