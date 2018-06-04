@@ -1,9 +1,14 @@
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package shopping_cart;
+
+import java.util.Scanner;
 
 /**
  *
@@ -11,26 +16,37 @@ package shopping_cart;
  */
 
 public class Cart {
+    int qty;
     float bill;
     public void bread()
     {
-    bill= (float) (bill+1.0);
+        System.out.println("Enter the quantity");
+          Scanner in = new Scanner(System.in);
+        qty=in.nextInt();
+    bill= (float) (bill+1.0)*qty;
     }
     
     public void milk()
     {
-    bill=(float) (bill+0.6);
+        System.out.println("Enter the quantity");
+         Scanner in = new Scanner(System.in);
+        qty=in.nextInt();
+    bill=(float) (bill+0.6)*qty;
     }
     
     public void banana()
     {
-    bill=(float) (bill+0.4);
+        System.out.println("Enter the quantity");
+         Scanner in = new Scanner(System.in);
+        qty=in.nextInt();
+    bill=(float) (bill+0.4)*qty;
     }
     
     
     public void bill()
     {
-        System.out.println("Bill"+bill);
+         
+        System.out.println("Bill = "+bill);
     }
     
 }
