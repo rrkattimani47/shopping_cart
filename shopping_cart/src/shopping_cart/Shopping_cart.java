@@ -5,17 +5,57 @@
  */
 package shopping_cart;
 
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author rashmikattimani47
  */
 public class Shopping_cart {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
     
+    public static void main (String[] args){
+    int ch;
+        Cart c=new Cart();
+       
+       while(true)
+       {
+           System.out.println("\n\nMenu\n1.Bread\n2.Milk\n3.Banana\n4.Bill\n5.Exit");
+           Scanner choice=new Scanner(System.in);
+            ch=choice.nextInt();
+            
+            switch(ch){
+                case 1: c.bread();
+                break;
+                
+                case 2:c.milk();              
+                break;
+                
+                case 3:c.banana();                
+                break;
+                
+                
+                case 4:c.bill();
+                break;
+                
+                case 5:System.out.println("Visit again");
+                 System.exit(0);
+                    break;
+                
+                default:System.out.println("Invalid choice");
+                break;
+           
+            
+    
+}  
+       }
+    }
+
 }
+
+
+        
+    
+    
+
