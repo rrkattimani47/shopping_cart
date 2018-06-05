@@ -18,6 +18,15 @@ import java.util.Scanner;
 public class Cart {
     int qty;
     float bill;
+
+  /** 
+   * All the below classes could be condensed to make one class as additem.
+   * Need for an extra option like checkout to subtract items.
+   * to make it more efficient we could use array to store the item name and list
+   * 
+   */
+    
+    
     public void bread()
     {
         System.out.println("Enter the quantity");
@@ -41,6 +50,12 @@ public class Cart {
         qty=in.nextInt();
     bill=(float) (bill+0.4)*qty;
     }
+    
+   /* public void checkout()
+    {
+        System.out.println("Want to remove any item? \n");
+        bill=bill-product;
+    }*/
     
     
     public void bill()
